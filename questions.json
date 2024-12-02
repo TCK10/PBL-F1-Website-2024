@@ -1,0 +1,56 @@
+{
+    "general_knowledge": {
+        "name": "General Knowledge",
+        "questions": [
+            {
+                "question": "What is 2 + 2?",
+                "correct_answer": "4",
+                "incorrect_answers": ["3", "5", "6"],
+                "difficulty": "easy"
+            },
+            {
+                "question": "How many continents are there?",
+                "correct_answer": "7",
+                "incorrect_answers": ["5", "6", "8"],
+                "difficulty": "medium"
+            }
+        ]
+    },
+    "science": {
+        "name": "Science",
+        "questions": [
+            {
+                "question": "What is the chemical symbol for Gold?",
+                "correct_answer": "Au",
+                "incorrect_answers": ["Ag", "Fe", "Cu"],
+                "difficulty": "medium"
+            },
+            {
+                "question": "What is the speed of light in vacuum?",
+                "correct_answer": "299,792,458 m/s",
+                "incorrect_answers": ["300,000,000 m/s", "299,000,000 m/s", "310,000,000 m/s"],
+                "difficulty": "hard"
+            }
+        ]
+    },
+    "geography": {
+        "name": "Geography",
+        "questions": [
+            {
+                "question": "What is the capital of Japan?",
+                "correct_answer": "Tokyo",
+                "incorrect_answers": ["Seoul", "Beijing", "Bangkok"]
+            }
+        ]
+    },
+    "art": {
+        "name": "Art",
+        "questions": [
+            {
+                "question": "Who painted the Mona Lisa?",
+                "correct_answer": "Leonardo da Vinci",
+                "incorrect_answers": ["Pablo Picasso", "Vincent van Gogh", "Michelangelo"]
+            }
+        ]
+    }
+}

@@ -17,7 +17,6 @@ body.trojan-horse {
 
 body.index {
   min-height: 100vh;
-
 }
 
 nav {
@@ -54,7 +53,7 @@ nav a {
 }
 
 nav a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -372,12 +371,12 @@ select {
 
 .question.easy::before {
   content: "Easy";
-  background-color: #4CAF50;
+  background-color: #4caf50;
 }
 
 .question.medium::before {
   content: "Medium";
-  background-color: #FFC107;
+  background-color: #ffc107;
 }
 
 .question.hard::before {
@@ -387,31 +386,31 @@ select {
 
 /* Style the menu icon to match other nav items */
 .menu-btn svg {
-    fill: black;
-    transition: fill 0.3s ease;
+  fill: black;
+  transition: fill 0.3s ease;
 }
 
 .menu-btn:hover svg {
-    fill: #73c2fb;
+  fill: #73c2fb;
 }
 
 /* Style both menu and close button SVGs */
 .menu-btn svg,
 .close-btn svg {
-    fill: black;
-    transition: fill 0.3s ease;
+  fill: black;
+  transition: fill 0.3s ease;
 }
 
 .menu-btn:hover svg,
 .close-btn:hover svg {
-    fill: #73c2fb;
+  fill: #73c2fb;
 }
 
 /* Add specific styling for close button if needed */
 .close-btn {
-    padding: 1em;
-    display: flex;
-    justify-content: flex-end;
+  padding: 1em;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .gtfo {

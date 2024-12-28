@@ -1,67 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Home</title>
-</head>
+  <body class="index">
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#" class="close-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#" class="active"
+            ><img src="/base/logo.png" alt="logo" height="40px"
+          /></a>
+        </li>
+        <li class="hideOnMobile"><a href="about.html">About</a></li>
+        <li class="hideOnMobile">
+          <a href="testimonials.html">Testimonials</a>
+        </li>
+        <li class="hideOnMobile"><a href="news.html">News</a></li>
+        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+        <li class="hideOnMobile"><a href="faq.html">FAQ</a></li>
+        <li class="hideOnMobile"><a href="login.php">Login</a></li>
+        <li onclick="showSidebar()">
+          <a href="#" class="menu-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-<body class="news">
-  <nav>
-    <ul class="sidebar">
-      <li onclick=hideSidebar()><a href="index.html" class="close-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
-          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
-        </svg>
-      </a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="testimonials.html">Testimonials</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="login.html">Login</a></li>
-    </ul>
-    <ul>
-      <li><a href="index.html" class="active"><img src="logo.png" alt="logo" height="40px"></a></li>
-      <li class="hideOnMobile"><a href="about.html">About</a></li>
-      <li class="hideOnMobile"><a href="testimonials.html">Testimonials</a></li>
-      <li class="hideOnMobile"><a href="news.html">News</a></li>
-      <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
-      <li class="hideOnMobile"><a href="faq.html">FAQ</a></li>
-      <li class="hideOnMobile"><a href="login.html">Login</a></li>
-      <li onclick=showSidebar()><a href="index.html" class="menu-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
-            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-          </svg>
-        </a></li>
-    </ul>
-  </nav>
+    <br /><br />
 
-  <script>
-    function showSidebar() {
+    <header class="news-header">
+      <h1>Latest News</h1>
+      <p>Stay updated with the latest happenings and announcements.</p>
+    </header>
+
+    <section class="news-container">
+      <!-- News Article 1 -->
+      <div class="news-card">
+        <img src="" alt="News 1" />
+        <div class="news-card-content">
+          <h3>Breaking News Title</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            vel lorem a libero varius...
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+
+      <!-- News Article 2 -->
+      <div class="news-card">
+        <img src="https://via.placeholder.com/300x200" alt="News 2" />
+        <div class="news-card-content">
+          <h3>Exciting Update</h3>
+          <p>
+            Phasellus a nunc sit amet sapien placerat elementum. Nam non lorem
+            risus. Sed ac felis...
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+
+      <!-- News Article 3 -->
+      <div class="news-card">
+        <img src="https://via.placeholder.com/300x200" alt="News 3" />
+        <div class="news-card-content">
+          <h3>Upcoming Event</h3>
+          <p>
+            Mauris vitae massa at lorem commodo lacinia. Integer sit amet urna
+            in felis dapibus...
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+
+      <!-- News Article 4 -->
+      <div class="news-card">
+        <img src="https://via.placeholder.com/300x200" alt="News 4" />
+        <div class="news-card-content">
+          <h3>Important Announcement</h3>
+          <p>
+            Pellentesque habitant morbi tristique senectus et netus et malesuada
+            fames ac turpis...
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-news-section">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>
+        Get the latest news delivered directly to your inbox. Stay informed,
+        stay ahead.
+      </p>
+      <a href="#">Login now</a>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-section-2">
+          <div class="brand-container">
+            <h3>Corvinus</h3>
+            <img src="/base/invlogo.png" alt="logo" height="40px" />
+          </div>
+          <p>Breaking Language Barriers, Building Connections.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <div class="social-icons">
+            <a href="#" class="social-icon"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Corvinus. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      function showSidebar() {
         const sidebar = document.querySelector(".sidebar");
         sidebar.style.display = "flex";
         setTimeout(() => {
-            sidebar.style.right = "0";
-            sidebar.style.opacity = "1";
+          sidebar.style.right = "0";
+          sidebar.style.opacity = "1";
         }, 10);
-    }
-    
-    function hideSidebar() {
+      }
+
+      function hideSidebar() {
         const sidebar = document.querySelector(".sidebar");
         sidebar.style.right = "-100%";
         sidebar.style.opacity = "0";
         setTimeout(() => {
-            sidebar.style.display = "none";
+          sidebar.style.display = "none";
         }, 800);
-    }
-  </script>
-</body>
-
+      }
+    </script>
+  </body>
 </html>

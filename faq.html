@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+  </head>
+
+  <body class="index">
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#" class="close-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#" class="active"
+            ><img src="/base/logo.png" alt="logo" height="40px"
+          /></a>
+        </li>
+        <li class="hideOnMobile"><a href="about.html">About</a></li>
+        <li class="hideOnMobile">
+          <a href="testimonials.html">Testimonials</a>
+        </li>
+        <li class="hideOnMobile"><a href="news.html">News</a></li>
+        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+        <li class="hideOnMobile"><a href="faq.html">FAQ</a></li>
+        <li class="hideOnMobile"><a href="login.php">Login</a></li>
+        <li onclick="showSidebar()">
+          <a href="#" class="menu-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <br /><br />
+
+    <header class="faq-header">
+      <h1>FAQ</h1>
+      <p>Your most common questions answered. Have more? Reach out to us!</p>
+      <a href="contact.html">Contact Us</a>
+    </header>
+
+    <div class="faq-container">
+      <details>
+        <summary>What is your return policy?</summary>
+        <p>
+          We accept returns within 30 days of purchase. Items must be in good
+          condition with all tags attached.
+        </p>
+      </details>
+
+      <details>
+        <summary>How can I contact customer support?</summary>
+        <p>
+          You can reach us via email at support@example.com or call us at (123)
+          456-7890.
+        </p>
+      </details>
+
+      <details>
+        <summary>Do you offer international shipping?</summary>
+        <p>
+          Yes, we ship to over 50 countries worldwide. Shipping fees and times
+          may vary depending on the destination.
+        </p>
+      </details>
+
+      <details>
+        <summary>Can I track my order?</summary>
+        <p>
+          Yes, once your order is shipped, you will receive a tracking number
+          via email to monitor your delivery.
+        </p>
+      </details>
+
+      <details>
+        <summary>What payment methods do you accept?</summary>
+        <p>
+          We accept major credit cards, PayPal, and other secure payment
+          methods. Full details are available during checkout.
+        </p>
+      </details>
+
+      <details>
+        <summary>How can I update my account details?</summary>
+        <p>
+          Log in to your account, go to the settings page, and update your
+          personal information or preferences.
+        </p>
+      </details>
+
+      <details>
+        <summary>What should I do if I receive a damaged item?</summary>
+        <p>
+          If you receive a damaged item, contact our support team immediately
+          with photos of the damage, and we’ll assist you with a replacement or
+          refund.
+        </p>
+      </details>
+
+      <details>
+        <summary>Are there any discounts for bulk orders?</summary>
+        <p>
+          Yes, we offer discounts for bulk orders. Please contact our sales team
+          for more details and a customized quote.
+        </p>
+      </details>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-section-2">
+          <div class="brand-container">
+            <h3>Corvinus</h3>
+            <img src="/base/invlogo.png" alt="logo" height="40px" />
+          </div>
+          <p>Breaking Language Barriers, Building Connections.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <div class="social-icons">
+            <a href="#" class="social-icon"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Corvinus. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+        setTimeout(() => {
+          sidebar.style.right = "0";
+          sidebar.style.opacity = "1";
+        }, 10);
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.right = "-100%";
+        sidebar.style.opacity = "0";
+        setTimeout(() => {
+          sidebar.style.display = "none";
+        }, 800);
+      }
+    </script>
+  </body>
+</html>

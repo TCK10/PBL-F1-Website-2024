@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+  </head>
+
+  <body class="index">
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#" class="close-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#" class="active"
+            ><img src="/base/logo.png" alt="logo" height="40px"
+          /></a>
+        </li>
+        <li class="hideOnMobile"><a href="about.html">About</a></li>
+        <li class="hideOnMobile">
+          <a href="testimonials.html">Testimonials</a>
+        </li>
+        <li class="hideOnMobile"><a href="news.html">News</a></li>
+        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+        <li class="hideOnMobile"><a href="faq.html">FAQ</a></li>
+        <li class="hideOnMobile"><a href="login.php">Login</a></li>
+        <li onclick="showSidebar()">
+          <a href="#" class="menu-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <br /><br />
+
+    <section class="testimonials">
+      <h1>Our Reviews</h1>
+      <div class="testimonial-carousel">
+        <div class="carousel-track">
+          <div class="testimonial-card">
+            <img
+              src="/base/testimonials/Henry Preston.png"
+              alt="Henry Preston"
+            />
+            <h3>Henry Preston</h3>
+            <div class="stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span
+              ><span>☆</span>
+            </div>
+            <p>
+              "This was an incredible experience. The design and functionality
+              exceeded my expectations!"
+            </p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <img
+              src="/base/testimonials/Mathew Favour.png"
+              alt="Mathew Favour"
+            />
+            <h3>Mathew Favour</h3>
+            <div class="stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span
+              ><span>★</span>
+            </div>
+            <p>
+              "Working with this team has been a pleasure. Highly recommend
+              their services!"
+            </p>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <img src="/base/testimonials/Darla Horton.png" alt="Darla Horton" />
+            <h3>Darla Horton</h3>
+            <div class="stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span
+              ><span>☆</span>
+            </div>
+            <p>
+              "Absolutely loved the creativity and attention to detail in the
+              project!"
+            </p>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="testimonial-card">
+            <img src="/base/testimonials/Michael Lee.png" alt="Michael Lee" />
+            <h3>Michael Lee</h3>
+            <div class="stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span
+              ><span>★</span>
+            </div>
+            <p>
+              "Fantastic work! The project was delivered on time and exceeded
+              expectations."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h2>Join Our Happy Clients</h2>
+      <p>
+        Experience the same exceptional service and results that our clients
+        rave about.
+      </p>
+      <a href="contact.html">Contact Us Today</a>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-section-2">
+          <div class="brand-container">
+            <h3>Corvinus</h3>
+            <img src="/base/invlogo.png" alt="logo" height="40px" />
+          </div>
+          <p>Breaking Language Barriers, Building Connections.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <div class="social-icons">
+            <a href="#" class="social-icon"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Corvinus. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+        setTimeout(() => {
+          sidebar.style.right = "0";
+          sidebar.style.opacity = "1";
+        }, 10);
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.right = "-100%";
+        sidebar.style.opacity = "0";
+        setTimeout(() => {
+          sidebar.style.display = "none";
+        }, 800);
+      }
+
+      const track = document.querySelector(".carousel-track");
+      const slides = Array.from(track.children);
+      let currentIndex = 0;
+
+      function updateCarousel() {
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+      }
+
+      function moveToNextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateCarousel();
+      }
+
+      // Auto-slide functionality
+      setInterval(moveToNextSlide, 3000);
+    </script>
+  </body>
+</html>
